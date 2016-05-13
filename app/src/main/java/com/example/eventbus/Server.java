@@ -22,6 +22,10 @@ public class Server {
 
     public void saveItem(String item) {
         mServerList.add(item);
+        requestItem();
+    }
+
+    public void requestItem() {
         Update update = new Update();
         update.itemList = mServerList;
         EventBus.getDefault().post(update);
