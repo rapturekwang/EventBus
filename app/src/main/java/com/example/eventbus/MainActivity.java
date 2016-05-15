@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Subscribe
-    public void onEvent(Update update) {
+    public void onEvent1(Update update) {
         mAdapter.swapData(update.itemList);
     }
 }
